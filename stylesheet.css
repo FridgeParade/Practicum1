@@ -1,0 +1,95 @@
+body{background-color: #f0f0f0; font-family: helvetia;}
+
+a{color: lightblue;}
+
+a:hover{color: #000;}
+
+/*< # is for ID, this is an unique thing, . is class, this can be used for items similar to eachother. Ie, # is good to determine sizes and locations of objects while . is better to determine font color of all those objects in one go.*/
+
+#navbar{
+	min-width: 100%;
+	height: 150px;
+	background-color: blue;
+}
+
+#namespace{
+
+}
+
+.navitem{
+
+}
+
+#mainwrap{
+	width: 1050px;
+	min-height: 800px;
+	margin: 0 auto;
+	background:white;
+	position:relative;
+}
+
+.chapter{
+	border: 1px;
+	border-color:#000;
+	background-color: red;
+	position: absolute;
+}
+
+#adspacetop{
+	width: 728px;
+	height:90px;
+	margin: 0 auto;
+	background: orange;
+	top: 10px;
+}
+
+#adspaceright{
+	width:300px;
+	height:250px;
+	position: absolute;
+	left:750px;
+	top:110px;
+	background-color:orange;
+}
+
+#chapter1{
+	width: 470px;
+	height: 300px;
+	top: 110px;
+	left: 0px;
+}
+
+#chapter2{
+	width: 250px;
+	height: 300px;
+	top: 110px;
+	left: 485px;
+}
+
+#chapter3{
+	width: 300px;
+	height: 400px;
+	top: 370px;
+	left: 750px;
+}
+
+#chapter4{
+	width: 360px;
+	height: 150px;
+	top: 420px;
+	left:0px;
+}
+
+#chapter5{
+	width:360px;
+	height: 150px;
+	top: 580px;
+	left:0px;
+}
+
+#chapter6{
+	width:360px;
+	height: 310px;
+	top:420px;
+	left: 375px;
+}
