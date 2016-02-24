@@ -1,4 +1,4 @@
-body{background-color: #f0f0f0; font-family: helvetia;}
+body{background-color: #f0f0f0; font-family: helvetica;}
 
 a{color: lightblue;}
 
@@ -21,25 +21,23 @@ a:hover{color: #000;}
 }
 
 #mainwrap{
-	width: 1050px;
+	width: 950px;
 	min-height: 800px;
 	margin: 0 auto;
-	background:white;
+	background:#f0f0f0;
 	position:relative;
 }
 
 .chapter{
-	border: 1px;
-	border-color:#000;
-	background-color: red;
+	background-color: white;
 	position: absolute;
+	color:#BFBF9F;
 }
 
 #adspacetop{
 	width: 728px;
 	height:90px;
 	margin: 0 auto;
-	background: orange;
 	top: 10px;
 }
 
@@ -47,9 +45,22 @@ a:hover{color: #000;}
 	width:300px;
 	height:250px;
 	position: absolute;
-	left:750px;
+	left:650px;
 	top:110px;
 	background-color:orange;
+}
+
+.articletitle{
+	font-size: 1.3em;
+	margin: 10px;
+	height: 1em;
+	color: black;
+}
+
+.subtitlearticle{
+	font-size:0.9em;
+	margin:10px;
+	height: 1em;
 }
 
 #chapter1{
@@ -59,8 +70,15 @@ a:hover{color: #000;}
 	left: 0px;
 }
 
+#imagespace1{
+	width:450px;
+	height:200px;
+	margin: 10px auto;
+	overflow:hidden;
+}
+
 #chapter2{
-	width: 250px;
+	width: 150px;
 	height: 300px;
 	top: 110px;
 	left: 485px;
@@ -70,7 +88,7 @@ a:hover{color: #000;}
 	width: 300px;
 	height: 400px;
 	top: 370px;
-	left: 750px;
+	left: 650px;
 }
 
 #chapter4{
@@ -88,8 +106,9 @@ a:hover{color: #000;}
 }
 
 #chapter6{
-	width:360px;
+	width:260px;
 	height: 310px;
 	top:420px;
 	left: 375px;
 }
+
