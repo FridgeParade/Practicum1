@@ -1,23 +1,58 @@
 body{background-color: #f0f0f0; font-family: helvetica;}
 
-a{color: lightblue;}
+a{color: #000; text-decoration: none; }
+a:-webkit-any-link{text-decoration: none;}
 
-a:hover{color: #000;}
+h3{color:#000; margin: 10px;}
+
 
 /*< # is for ID, this is an unique thing, . is class, this can be used for items similar to eachother. Ie, # is good to determine sizes and locations of objects while . is better to determine font color of all those objects in one go.*/
 
-#navbar{
+#namebar{
+	position:fixed;
+	min-width:100%;
+	width:1224px;
+	left:0px;
+	top:0px;
+	height:100px;
+	background-color: #FFF;
+	text-align: center;
+	z-index: 10;
+}
+
+nav{
+	position:fixed;
 	min-width: 100%;
-	height: 150px;
-	background-color: blue;
+	width: 1224px;
+	left:0%;
+	top:100px;
+	height: 70px;
+	z-index: 10;
+	background-color:#FFF;
 }
 
-#namespace{
+ul{
+	list-style-type: none; 
+	margin: 0; 
+	padding: 0;
+} /*removes default browser css*/
 
+li{
+	float:left;
+	border-right: 2px solid #f0f0f0;
 }
 
-.navitem{
+li a{
+	display:block;
+	color: #000;
+    padding: 26px 55px; /*this determines size of the navitems*/
+    text-decoration: none;
+    text-align: center;
+	} /*makes whole area of link, not just text, clickable*/
 
+li a:hover {
+    background-color: #27A4F2;
+    color: #FFF;
 }
 
 #mainwrap{
@@ -26,6 +61,7 @@ a:hover{color: #000;}
 	margin: 0 auto;
 	background:#f0f0f0;
 	position:relative;
+	top:190px;
 }
 
 .chapter{
@@ -34,11 +70,14 @@ a:hover{color: #000;}
 	color:#BFBF9F;
 }
 
+/*the following is to place ads*/
+
 #adspacetop{
 	width: 728px;
 	height:90px;
 	margin: 0 auto;
 	top: 10px;
+	background-color:orange;
 }
 
 #adspaceright{
@@ -50,65 +89,149 @@ a:hover{color: #000;}
 	background-color:orange;
 }
 
-.articletitle{
-	font-size: 1.3em;
-	margin: 10px;
-	height: 1em;
-	color: black;
-}
 
+/*this is to make it easy to manipulate subtitles on the main page*/
 .subtitlearticle{
 	font-size:0.9em;
 	margin:10px;
 	height: 1em;
 }
 
-#chapter1{
-	width: 470px;
-	height: 300px;
-	top: 110px;
-	left: 0px;
-}
+/*this is to give shape to our chapter items, imagesspaces are numbered according to their parent chapter. Some items have no textarea assigned as they simply dont need it*/
 
-#imagespace1{
-	width:450px;
-	height:200px;
-	margin: 10px auto;
-	overflow:hidden;
-}
-
-#chapter2{
-	width: 150px;
-	height: 300px;
-	top: 110px;
-	left: 485px;
-}
-
-#chapter3{
+#indexbar{
 	width: 300px;
 	height: 400px;
 	top: 370px;
 	left: 650px;
 }
 
-#chapter4{
+#introduction{
+	width: 470px;
+	height: 300px;
+	top: 110px;
+
+}
+
+#imagespaceintro{
+	width:450px;
+	height:200px;
+	margin: 10px auto;
+	overflow:hidden;
+}
+
+#chapter1{
+	width: 150px;
+	height: 300px;
+	top: 110px;
+	left: 485px;
+}
+
+#chapter2{
 	width: 360px;
 	height: 150px;
 	top: 420px;
-	left:0px;
 }
 
-#chapter5{
+#textarea2{
+	position:absolute;
+	margin-left:10px;
+	margin-top:10px;
+	max-width:190px;
+}
+
+#imagespace2{
+	position:absolute;
+	width:130px;
+	height:130px;
+	left:200px;
+	overflow:hidden;
+}
+
+#chapter3{
 	width:360px;
 	height: 150px;
 	top: 580px;
-	left:0px;
 }
 
-#chapter6{
+#textarea3{
+	position:absolute;
+	left:150px;
+	margin-top:10px;
+}
+
+#imagespace3{
+	position:absolute;
+	width:130px;
+	height:130px;
+	margin: 10px;
+	overflow:hidden;
+}
+
+#chapter4{
 	width:260px;
 	height: 310px;
 	top:420px;
 	left: 375px;
 }
+
+#imagespace4{
+	width:240px;
+	height:150px;
+	margin: 10px;
+	overflow:hidden;
+}
+
+#chapter5{
+	width:635px;
+	height: 340px;
+	top:740px;
+}
+
+#imagespace5{
+	width:615px;
+	height:240px;
+	margin: 10px;
+	overflow:hidden;
+}
+
+#chapter6{
+	width:635px;
+	height: 340px;
+	top:1090px;
+}
+
+#imagespace6{
+	width:615px;
+	height:240px;
+	margin: 10px;
+	overflow:hidden;
+}
+
+/*the following is for the underline animation of the chapter titles on the main page*/
+
+.underline {
+  position: relative;
+  color: #000;
+}
+.underline:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 5px;
+  background-color: #27A4F2;
+  content: "";
+  -webkit-transition: width 0.3s; /*Safari*/
+  transition: width 0.3s;
+}
+.underline:hover {
+  color: #27A4F2;
+}
+.underline:hover:after {
+  width: 100%;
+}
+
+
 
