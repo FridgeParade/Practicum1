@@ -7,6 +7,9 @@
 		<title>Ad Networks &amp Ad Servers</title> <!-- Title of our website as it appears in browser tabs-->
 
 		<link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="screen"> <!-- Connection to our stylesheet, if we want to go full out we might want to add another for mobile using media="handeheld"-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+		<script src="js/flickrrequest.js"></script>
 
 		<meta name="robots" content="noindex"> <!-- should prevent the indexing of this website in search engines -->
 	
@@ -19,16 +22,15 @@
 			<h3>Ad networks &amp Servers</h3>
 		</div>
 
-		<nav>
-
+		<nav class="navigation">
 			<div id="navitems">
 			<ul>
-				<li><a href="/index.html">Home / Index</a></li>
-				<li><a href="/index.html">About</a></li>
-				<li><a href="/index.html">Complete Paper (pdf)</a></li>
-				<li><a href="/index.html">Sources</a></li>
-				<li><a href="/index.html">Sitemap</a></li>
-				<li><a href="/index.html">Image Gallery</a></li>
+				<li><a href="~5837413/index.html">Home / Index</a></li>
+				<li><a href="~5837413/index.html">About</a></li>
+				<li><a href="~5837413/index.html">Complete Paper (pdf)</a></li>
+				<li><a href="~5837413/index.html">Sources</a></li>
+				<li><a href="~5837413/index.html">Sitemap</a></li>
+				<li><a href="~5837413/index.html">Image Gallery</a></li>
 			</ul>
 
 			</div>
@@ -60,7 +62,16 @@
 				<p class="subtitlearticle">How the World Wide Web gave rise to the ad network</p>
 			</div>
 
-			<div id="indexbar" class="chapter">
+			<div id="photoslider" class="chapter">
+				<div id="controls">
+					<input id="searchtag" value="Advertising" />
+					<button id="submitbutton">Submit</button>
+					<button id="previousbutton">Previous Image</button>
+					<button id="nextbutton">Next Image</button>
+				</div>
+				<div id="images">
+					
+				</div>
 			</div>
 
 			<div id="chapter2" class="chapter">
